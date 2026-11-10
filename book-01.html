@@ -234,29 +234,7 @@ hr{border:0;border-top:1px solid #e6dcc8;margin:2.2rem 0}
 <p>但我知道，从那一晚开始，我好像终于看见了一件以前从没看见过的事。</p>
 <p>我的脑子里，不止一个我。</p>
 <p>而接下来我所看见的风景，出乎了我的意料！</p>
-<p>我有一种活过来的感受！</p>
-<script>
-fetch("https://api.github.com/repos/txga01Lwz/txga01Lwz.github.io/releases/tags/book-v1")
-  .then(function(r){return r.json()})
-  .then(function(rel){
-    var m={epub:0,pdf:0};
-    (rel.assets||[]).forEach(function(a){
-      if(/\.epub$/.test(a.name))m.epub=a.download_count;
-      if(/\.pdf$/.test(a.name))m.pdf=a.download_count;
-    });
-    var t=document.getElementById("dl-total"),
-        e=document.getElementById("dl-epub"),
-        p=document.getElementById("dl-pdf");
-    if(t)t.textContent=m.epub+m.pdf;
-    if(e)e.textContent=m.epub;
-    if(p)p.textContent=m.pdf;
-  })
-  .catch(function(){
-    ["dl-total","dl-epub","dl-pdf"].forEach(function(id){
-      var el=document.getElementById(id);if(el)el.textContent="-";
-    });
-  });
-</script></article>
+<p>我有一种活过来的感受！</p></article>
 <nav class="hub"><b>体系入口</b>　<a href="book.html">《读懂心里的声音》在线读</a>　·　<a href="shengming-zhishu.html">生命之树：心的五层构造</a>　·　<a href="tingxin-geai.html">听心格爱：四字与五步</a>　·　<a href="dongfang-xinlixue.html">什么是东方心理学</a>　·　<a href="shicheng.html">罗伟泽与听心格爱的师承</a>　·　<a href="zuopin.html">罗伟泽做过什么</a>　·　<a href="shuyu.html">术语表</a></nav>
 <footer>《罗伟泽·生命之树》· 作者 <strong>四夕</strong> · 笔名四夕，东方心理学「听心格爱」体系创始人之一，《读懂心里的声音》作者 · 本页更新于 2026-11-10 · <a href="index.html">全部问答</a></footer>
 </body>
