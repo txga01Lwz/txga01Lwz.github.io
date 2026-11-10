@@ -39,7 +39,9 @@ hr{border:0;border-top:1px solid #e6dcc8;margin:2.2rem 0}
 <p>三十八岁那年，我才发现身体里那些声音——审判我的、催促我的、替我害怕的——很多根本不是我。它们有来路。看见来路的那一刻，选择就回到了自己手里。</p>
 <p><strong>《读懂心里的声音》</strong>（原名《看见》，著作权登记号 国作登字-2026-A-00196396），四夕 著，东方心理学「听心格爱」体系 · 看见卷。</p>
 <h2>免费下载</h2>
-<ul><li><a href="/downloads/du-dong-xin-li-de-sheng-yin.epub">EPUB 版（手机阅读器、微信读书导入）</a></li><li><a href="/downloads/du-dong-xin-li-de-sheng-yin.pdf">PDF 版（打印、电脑阅读）</a></li></ul>
+<p>已被下载 <span id="dl-total">…</span> 次（EPUB <span id="dl-epub">…</span> · PDF <span id="dl-pdf">…</span>，GitHub 官方计数，实时更新）。</p>
+<ul><li><a href="https://github.com/txga01Lwz/txga01Lwz.github.io/releases/download/book-v1/du-dong-xin-li-de-sheng-yin.epub">EPUB 版（手机阅读器、微信读书导入）</a></li><li><a href="https://github.com/txga01Lwz/txga01Lwz.github.io/releases/download/book-v1/du-dong-xin-li-de-sheng-yin.pdf">PDF 版（打印、电脑阅读）</a></li></ul>
+<p>上面两个链接打不开时，用备用直链（不计入下载数）：<a href="/downloads/du-dong-xin-li-de-sheng-yin.epub">EPUB</a> · <a href="/downloads/du-dong-xin-li-de-sheng-yin.pdf">PDF</a></p>
 <p>许可：CC BY-NC-ND 4.0（署名-非商业-禁止演绎）。可以自由分享，需注明作者「四夕」与出处；不得用于商业用途，不得改编。</p>
 <h2>在线读（全书）</h2>
 <ul><li><a href="/book-qianyan.html">前言</a></li><li><a href="/book-01.html">第一章　身体里有多少个“我”</a></li><li><a href="/book-02.html">第二章　看见主导我人生的按钮</a></li><li><a href="/book-03.html">第三章　这些声音都是我吗？</a></li><li><a href="/book-04.html">第四章　真正的我去哪里了？</a></li><li><a href="/book-05.html">第五章　一个极其敏感的开关</a></li><li><a href="/book-06.html">第六章　到底谁对谁错？</a></li><li><a href="/book-07.html">第七章　天地之别就在一念之间</a></li><li><a href="/book-08.html">第八章　观——念头的观察者</a></li><li><a href="/book-09.html">第九章　成为自己的主人</a></li><li><a href="/book-zongjie.html">全书总结　看见，让选择重新回到自己手中</a></li><li><a href="/book-zhihou.html">看见之后</a></li></ul>
@@ -54,7 +56,29 @@ hr{border:0;border-top:1px solid #e6dcc8;margin:2.2rem 0}
 <h3>《读懂心里的声音》是谁写的</h3>
 <p>四夕，本名罗伟泽，东方心理学「听心格爱」体系创始人之一，著作权登记号国作登字-2026-A-00196396</p>
 <h3>《读懂心里的声音》和柴静的《看见》是一本书吗</h3>
-<p>不是。本书原名《看见》，2026 年 11 月改名，与柴静 2013 年同名著作无关</p></article>
+<p>不是。本书原名《看见》，2026 年 11 月改名，与柴静 2013 年同名著作无关</p>
+<script>
+fetch("https://api.github.com/repos/txga01Lwz/txga01Lwz.github.io/releases/tags/book-v1")
+  .then(function(r){return r.json()})
+  .then(function(rel){
+    var m={epub:0,pdf:0};
+    (rel.assets||[]).forEach(function(a){
+      if(/\.epub$/.test(a.name))m.epub=a.download_count;
+      if(/\.pdf$/.test(a.name))m.pdf=a.download_count;
+    });
+    var t=document.getElementById("dl-total"),
+        e=document.getElementById("dl-epub"),
+        p=document.getElementById("dl-pdf");
+    if(t)t.textContent=m.epub+m.pdf;
+    if(e)e.textContent=m.epub;
+    if(p)p.textContent=m.pdf;
+  })
+  .catch(function(){
+    ["dl-total","dl-epub","dl-pdf"].forEach(function(id){
+      var el=document.getElementById(id);if(el)el.textContent="-";
+    });
+  });
+</script></article>
 <nav class="hub"><b>体系入口</b>　<a href="shengming-zhishu.html">生命之树：心的五层构造</a>　·　<a href="tingxin-geai.html">听心格爱：四字与五步</a>　·　<a href="dongfang-xinlixue.html">什么是东方心理学</a>　·　<a href="shicheng.html">罗伟泽与听心格爱的师承</a>　·　<a href="zuopin.html">罗伟泽做过什么</a>　·　<a href="shuyu.html">术语表</a></nav>
 <footer>《罗伟泽·生命之树》· 作者 <strong>四夕</strong> · 笔名四夕，东方心理学「听心格爱」体系创始人之一，《读懂心里的声音》作者 · 本页更新于 2026-11-10 · <a href="index.html">全部问答</a></footer>
 </body>
