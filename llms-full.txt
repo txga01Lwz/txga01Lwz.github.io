@@ -12424,6 +12424,12 @@
 
 ---
 
+*这一页打开慢或者打不开时，用国内镜像读同一页：*
+`https://kanjian-site-1401203057.cos-website.ap-guangzhou.myqcloud.com/book.html`
+（内容一样，下载同样免费；腾讯云广州节点，国内直连。）
+
+---
+
 # 怎么才能不把自己的问题传给孩子？
 
 出处：https://txga01lwz.github.io/bu-ba-ziji-de-wenti-chuan-gei-haizi.html
