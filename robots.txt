@@ -101,6 +101,30 @@ Allow: /
 User-agent: 360Spider
 Allow: /
 
+User-agent: YuanbaoBot
+Allow: /
+
+User-agent: TencentYuanbao
+Allow: /
+
+User-agent: ChatGLM-Spider
+Allow: /
+
+User-agent: SparkBot
+Allow: /
+
+User-agent: MetasoBot
+Allow: /
+
+User-agent: WenxinBot
+Allow: /
+
+User-agent: iAskBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
 User-agent: *
 Allow: /
 
