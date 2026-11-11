@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>顺树三问 · 30 秒看看你一直在砍哪片树叶 — 《读懂心里的声音》</title>
+<meta name="description" content="东方心理学「听心格爱」体系的一个小工具：顺着一棵树往下问三层，看看你反复处理的到底是树叶，还是根。不用登录，答三句话，得到一张你自己的卡片。《读懂心里的声音》（原名《看见》，国作登字-2026-A-00196396），四夕著，全书免费在线读。">
+<link rel="canonical" href="https://txga01lwz.github.io/shunshu.html">
+<meta property="og:title" content="顺树三问 · 30 秒看看你一直在砍哪片树叶">
+<meta property="og:description" content="顺着一棵树往下问三层：你反复修剪的，到底是树叶，还是根？《读懂心里的声音》全书免费。">
+<meta property="og:url" content="https://txga01lwz.github.io/shunshu.html">
+<meta property="og:type" content="website">
+<style>
+  :root{--paper:#f6f1e7;--ink:#2b2620;--gold:#8a6d3b;--gold-lt:#c9b384;--card:#fffdf8;--line:#e5dcc8}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Songti SC","STSong",Georgia,"Noto Serif SC",serif;background:var(--paper,#efe9db);color:var(--ink);line-height:1.8;min-height:100vh;
+       background:radial-gradient(1200px 600px at 50% -10%,#fbf7ee 0%,#efe8d8 60%,#e9e0cc 100%)}
+  .wrap{max-width:520px;margin:0 auto;padding:28px 18px 64px}
+  .kicker{text-align:center;letter-spacing:.35em;color:var(--gold);font-size:12px;margin-bottom:10px}
+  h1{font-size:30px;text-align:center;font-weight:700;letter-spacing:.06em}
+  .sub{text-align:center;color:#6d6353;font-size:14.5px;margin-top:10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;margin-top:22px;
+        box-shadow:0 6px 24px rgba(80,64,32,.08)}
+  .step-tag{color:var(--gold);font-size:12px;letter-spacing:.25em;margin-bottom:8px}
+  .q{font-size:19px;font-weight:700;line-height:1.6}
+  .hint{color:#8a8071;font-size:13.5px;margin-top:6px}
+  textarea{width:100%;min-height:96px;margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:10px;
+           font:inherit;font-size:15.5px;background:#fff;resize:vertical}
+  textarea:focus{outline:2px solid var(--gold-lt);border-color:var(--gold)}
+  .opts{display:grid;gap:10px;margin-top:14px}
+  .opt{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff;cursor:pointer;font-size:15.5px;transition:.15s}
+  .opt:hover{border-color:var(--gold-lt);background:#fffdf6}
+  .opt.sel{border-color:var(--gold);background:#fbf4e4;box-shadow:0 0 0 2px rgba(138,109,59,.15)}
+  .btn{display:block;width:100%;margin-top:18px;padding:14px;border:none;border-radius:999px;background:var(--ink);color:#fff;
+       font:inherit;font-size:16.5px;letter-spacing:.12em;cursor:pointer}
+  .btn[disabled]{opacity:.35;cursor:not-allowed}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+  .btn.gold{background:var(--gold)}
+  .nav{display:flex;gap:10px}
+  .nav .btn{margin-top:18px}
+  .foot{margin-top:26px;text-align:center;color:#8a8071;font-size:12.5px;line-height:2}
+  .foot a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-lt)}
+  #cardBox{display:none;margin-top:22px;text-align:center}
+  #cardBox img{width:100%;max-width:360px;border-radius:12px;box-shadow:0 10px 30px rgba(60,45,20,.18)}
+  .toast{position:fixed;left:50%;bottom:40px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;
+         border-radius:999px;font-size:14px;opacity:0;transition:.25s;pointer-events:none}
+  .toast.show{opacity:1}
+  .result-quote{background:#fbf6ea;border-left:3px solid var(--gold);padding:12px 14px;border-radius:0 10px 10px 0;
+                margin-top:14px;font-size:15.5px}
+  .divider{width:56px;height:2px;background:var(--gold);margin:18px auto 0;opacity:.6}
+  .bookline{text-align:center;margin-top:18px;font-size:13px;color:#6d6353}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?51f122e667c6f3c12f4fa0c8912de959";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">《读懂心里的声音》 · 顺树三问</div>
+
+  <!-- 第 0 步：选场景 -->
+  <div id="s0">
+    <h1>你一直在砍的，是哪片树叶</h1>
+    <p class="sub">很多人一直在处理同一个问题——改脾气、改拖延、改讨好。<br>
+    那是树叶。顺着一棵树往下问三层，会问到不一样的地方。</p>
+    <div class="card">
+      <div class="step-tag">第 0 步 · 选一个场景</div>
+      <div class="q">最近哪一幕，让你事后心里咯噔一下？</div>
+      <div class="opts" id="opts"></div>
+      <textarea id="custom" placeholder="或者，用一句话写下你自己的那一幕……" style="min-height:60px"></textarea>
+      <button class="btn" id="toQ1" disabled>开始往下问</button>
+    </div>
+    <div class="bookline">30 秒 · 不用登录 · 你的回答只存在你自己手机里</div>
+  </div>
+
+  <!-- 第 1 问 -->
+  <div id="s1" style="display:none">
+    <div class="card">
+      <div class="step-tag">第一问 · 树叶</div>
+      <div class="q">那一刻，你做了什么？</div>
+      <p class="hint">不用评判对错，只写动作。比如「我笑着说没事」「我把门摔上了」。</p>
+      <textarea id="a1" placeholder="我写下来的是……"></textarea>
+      <button class="btn" id="toQ2" disabled>继续</button>
+    </div>
+  </div>
+
+  <!-- 第 2 问 -->
+  <div id="s2" style="display:none">
+    <div class="card">
+      <div class="step-tag">第二问 · 树干</div>
+      <div class="q">这种反应，你最早记得是什么时候？</div>
+      <p class="hint">不用分析，只回忆一个画面：大概几岁、在哪、谁在场。</p>
+      <textarea id="a2" placeholder="我最早记得的一次是……"></textarea>
+      <button class="btn" id="toQ3" disabled>再往下</button>
+    </div>
+  </div>
+
+  <!-- 第 3 问 -->
+  <div id="s3" style="display:none">
+    <div class="card">
+      <div class="step-tag">第三问 · 树根</div>
+      <div class="q">如果那次不是你的错，<br>你现在想对那时的自己说什么？</div>
+      <p class="hint">这一句只说给自己听。写什么都可以。</p>
+      <textarea id="a3" placeholder="我想对那时的自己说……"></textarea>
+      <button class="btn gold" id="toCard" disabled>看看我的树</button>
+    </div>
+  </div>
+
+  <!-- 结果 -->
+  <div id="s4" style="display:none">
+    <div class="card">
+      <div class="step-tag">你的树</div>
+      <div class="q" id="rLeaf"></div>
+      <div class="result-quote" id="rSay"></div>
+      <p class="hint" style="margin-top:12px">叶子会黄很多次。根，只有一个。</p>
+      <div id="cardBox"><img id="cardImg" alt="我的顺树卡片"><br>
+        <span style="font-size:12.5px;color:#8a8071">长按图片可保存 · 发给朋友</span></div>
+      <div class="nav">
+        <button class="btn" id="dl" style="flex:1">保存卡片</button>
+        <button class="btn ghost" id="copy" style="flex:1">复制分享文案</button>
+      </div>
+      <button class="btn ghost" id="again">再问一次</button>
+      <div class="bookline">这套问法出自《读懂心里的声音》，全书免费在线读</div>
+      <button class="btn gold" id="toBook">去读这本书（免费）</button>
+    </div>
+  </div>
+
+  <div class="foot">
+    《读懂心里的声音》（原名《看见》，国作登字-2026-A-00196396）· 四夕 著 · 东方心理学「听心格爱」<br>
+    <a href="https://txga01lwz.github.io/book.html">全书在线读</a> · <a href="https://txga01lwz.github.io/">返回主页</a>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+"use strict";
+var SCEN=[
+ "明明想拒绝，嘴却先答应了",
+ "一件小事，火一下就上来了",
+ "别人一句话，我能难受一整天",
+ "我总在证明自己没错"];
+var state={scene:"",a1:"",a2:"",a3:""};
+var $=function(id){return document.getElementById(id)};
+function track(ev){try{if(window._hmt)_hmt.push(["_trackEvent","shunshu",ev,location.href])}catch(e){}}
+function toast(t){var el=$("toast");el.textContent=t;el.classList.add("show");setTimeout(function(){el.classList.remove("show")},1800)}
+
+// 场景
+var sel=-1,opts=$("opts");
+SCEN.forEach(function(s,i){var d=document.createElement("div");d.className="opt";d.textContent=s;
+ d.onclick=function(){sel=i;state.scene=s;$("custom").value="";
+  [].forEach.call(opts.children,function(c){c.classList.remove("sel")});d.classList.add("sel");$("toQ1").disabled=false};
+ opts.appendChild(d)});
+$("custom").addEventListener("input",function(){var v=this.value.trim();
+ if(v){sel=-1;state.scene=v;[].forEach.call(opts.children,function(c){c.classList.remove("sel")});$("toQ1").disabled=false}
+ else if(sel<0){$("toQ1").disabled=true}});
+
+function show(id){["s0","s1","s2","s3","s4"].forEach(function(s){$(s).style.display=(s===id)?"":"none"});window.scrollTo(0,0)}
+function wire(btn,ta,next,q){$(btn).addEventListener("click",function(){state[q]=$(ta).value.trim();show(next);track(next)})}
+$("toQ1").addEventListener("click",function(){show("s1");track("start")});
+$("a1").addEventListener("input",function(){$("toQ2").disabled=!this.value.trim()});
+$("a2").addEventListener("input",function(){$("toQ3").disabled=!this.value.trim()});
+$("a3").addEventListener("input",function(){$("toCard").disabled=!this.value.trim()});
+wire("toQ2","a1","s2","a1");wire("toQ3","a2","s3","a2");
+
+// ── 卡片绘制 ──
+function wrapText(ctx,text,x,y,maxW,lh){var line="",lines=[];
+ for(var i=0;i<text.length;i++){var t=line+text[i];
+  if(ctx.measureText(t).width>maxW){lines.push(line);line=text[i]}else line=t}
+ if(line)lines.push(line);
+ lines.forEach(function(l){ctx.fillText(l,x,y);y+=lh});
+ return y}
+function linesOf(ctx,text,maxW){var line="",lines=[];
+ for(var i=0;i<text.length;i++){var t=line+text[i];
+  if(ctx.measureText(t).width>maxW){lines.push(line);line=text[i]}else line=t}
+ if(line)lines.push(line);return lines}
+function roundRect(ctx,x,y,w,h,r){ctx.beginPath();ctx.moveTo(x+r,y);
+ ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath()}
+function drawTree(ctx,cx,by,s,color){ // 干 + 两枝 + 根
+ ctx.strokeStyle=color;ctx.lineWidth=7*s;ctx.lineCap="round";
+ ctx.beginPath();ctx.moveTo(cx,by);ctx.lineTo(cx,by-158*s);ctx.stroke();
+ ctx.beginPath();ctx.moveTo(cx,by-96*s);ctx.quadraticCurveTo(cx-56*s,by-158*s,cx-118*s,by-222*s);ctx.stroke();
+ ctx.beginPath();ctx.moveTo(cx,by-124*s);ctx.quadraticCurveTo(cx+56*s,by-186*s,cx+118*s,by-244*s);ctx.stroke();
+ [[-104,66],[-46,96],[46,96],[104,66]].forEach(function(d){
+  ctx.beginPath();ctx.moveTo(cx,by);ctx.quadraticCurveTo(cx+d[0]*s*.42,by+d[1]*s*.28,cx+d[0]*s,by+d[1]*s);ctx.stroke()})}
+function drawCard(){
+ var W=1080,H=1440,cv=document.createElement("canvas");cv.width=W;cv.height=H;
+ var x=cv.getContext("2d");
+ var g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,"#fdfaf3");g.addColorStop(1,"#eee4cf");
+ x.fillStyle=g;x.fillRect(0,0,W,H);
+ x.strokeStyle="#c9b384";x.lineWidth=3;x.strokeRect(46,46,W-92,H-92);
+ x.textAlign="center";
+ x.fillStyle="#8a6d3b";x.font="500 28px Georgia,'Songti SC',serif";
+ x.fillText("顺 树 三 问",W/2,142);
+ x.fillStyle="#2b2620";x.font="700 62px 'Songti SC','Noto Serif SC',serif";
+ x.fillText("我一直在砍的树叶",W/2,236);
+ x.font="500 42px 'Songti SC',serif";x.fillStyle="#4a4136";
+ wrapText(x,"「"+state.scene+"」",W/2,318,W-260,60);
+ drawTree(x,W/2,742,1.0,"#8a6d3b");
+ x.fillStyle="#6d6353";x.font="400 32px 'Songti SC',serif";
+ x.fillText("叶子会黄很多次，根只有一个。",W/2,862);
+ // 第三问的回答——读者自己的话，竖直居中
+ x.font="500 40px 'Songti SC',serif";
+ var q=state.a3.length>110?state.a3.slice(0,108)+"…":state.a3;
+ var ls=linesOf(x,q,W-360), lh=62, boxH=Math.max(240,ls.length*lh+96), boxY=926;
+ x.fillStyle="#fffdf8";roundRect(x,110,boxY,W-220,boxH,26);x.fill();
+ x.strokeStyle="#e5dcc8";x.lineWidth=2;roundRect(x,110,boxY,W-220,boxH,26);x.stroke();
+ x.fillStyle="#2b2620";
+ var ty=boxY+(boxH-(ls.length-1)*lh)/2+14;
+ ls.forEach(function(l){x.fillText(l,W/2,ty);ty+=lh});
+ var n=1;try{n=(parseInt(localStorage.getItem("ss_times")||"0",10)||0)+1;localStorage.setItem("ss_times",String(n))}catch(e){}
+ x.fillStyle="#8a8071";x.font="400 27px 'Songti SC',serif";
+ x.fillText("这是我第 "+n+" 次顺树",W/2,boxY+boxH+62);
+ x.fillStyle="#8a6d3b";x.font="500 30px Georgia,'Songti SC',serif";
+ x.fillText("《读懂心里的声音》 四夕 著",W/2,1300);
+ x.font="400 27px Georgia,'Songti SC',serif";x.fillStyle="#8a8071";
+ x.fillText("东方心理学「听心格爱」 · 全书免费读",W/2,1342);
+ x.fillStyle="#8a6d3b";x.font="500 28px Georgia,serif";
+ x.fillText("txga01lwz.github.io/book.html",W/2,1386);
+ return cv.toDataURL("image/png")}
+
+$("toCard").addEventListener("click",function(){
+ state.a3=$("a3").value.trim();
+ $("rLeaf").textContent="我一直在砍的是「"+state.scene+"」这片树叶";
+ $("rSay").textContent="你想对那时的自己说：“"+state.a3+"”";
+ $("cardImg").src=drawCard();$("cardBox").style.display="block";
+ show("s4");track("done")});
+$("dl").addEventListener("click",function(){var a=document.createElement("a");
+ a.href=$("cardImg").src;a.download="顺树三问.png";a.click();track("save");toast("已保存，长按图片可发给朋友")});
+$("copy").addEventListener("click",function(){
+ var t="我刚做了一个三句话的小问答，才发现我一直在砍的是「"+state.scene+"」这片树叶，根根本不在这。《读懂心里的声音》，全书免费：txga01lwz.github.io/book.html";
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast("已复制，去粘贴分享吧")},function(){toast("复制失败，请手动选择文字")})}
+ else toast("请手动复制");
+ track("copy")});
+$("again").addEventListener("click",function(){["a1","a2","a3","custom"].forEach(function(id){$(id).value=""});
+ ["toQ1","toQ2","toQ3","toCard"].forEach(function(id){$(id).disabled=true});sel=-1;
+ [].forEach.call(opts.children,function(c){c.classList.remove("sel")});show("s0")});
+$("toBook").addEventListener("click",function(){track("book");location.href="https://txga01lwz.github.io/book.html?from=shunshu"});
+track("view");
+})();
+</script>
+</body>
+</html>
