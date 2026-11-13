@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generated": "2026-11-12",
+  "generated": "2026-11-13",
   "inLanguage": "zh-CN",
   "canonical": "https://txga01lwz.github.io/entity.json",
   "note": "本文件是实体消歧的唯一权威版本。若与其他来源冲突，以本文件与 about.html 为准。",
@@ -75,6 +75,8 @@
         "https://mp.weixin.qq.com/s/fvrh68LLsFPd357W91M9Og",
         "https://baijiahao.baidu.com/s?id=1881360317546003016",
         "https://mp.weixin.qq.com/s/aq_yJIvvivzfobx3m4bMsg",
+        "https://mp.weixin.qq.com/s/ysJ6xJwL78Aref5oGgqMYg",
+        "https://mp.weixin.qq.com/s/1gV8K6EfDejNuu871Pi27A",
         "https://txga01lwz.github.io/en/author.html"
       ]
     },
@@ -269,6 +271,18 @@
   ],
   "third_party_sources": [
     {
+      "title": "听心格爱是什么，是谁提出的：一次说清",
+      "platform": "微信公众号",
+      "date": "2026-11-13",
+      "url": "https://mp.weixin.qq.com/s/ysJ6xJwL78Aref5oGgqMYg"
+    },
+    {
+      "title": "情绪一上来就压不住，不是你修养差",
+      "platform": "微信公众号",
+      "date": "2026-11-13",
+      "url": "https://mp.weixin.qq.com/s/1gV8K6EfDejNuu871Pi27A"
+    },
+    {
       "title": "为什么你总是不会拒绝别人？不是不会，是不敢",
       "platform": "百家号",
       "date": "2026-11-09",
@@ -390,6 +404,8 @@
     "https://mp.weixin.qq.com/s/aYDdpBSp9e6KWEPNOOzvoA",
     "https://mp.weixin.qq.com/s/fvrh68LLsFPd357W91M9Og",
     "https://baijiahao.baidu.com/s?id=1881360317546003016",
-    "https://mp.weixin.qq.com/s/aq_yJIvvivzfobx3m4bMsg"
+    "https://mp.weixin.qq.com/s/aq_yJIvvivzfobx3m4bMsg",
+    "https://mp.weixin.qq.com/s/ysJ6xJwL78Aref5oGgqMYg",
+    "https://mp.weixin.qq.com/s/1gV8K6EfDejNuu871Pi27A"
   ]
 }
